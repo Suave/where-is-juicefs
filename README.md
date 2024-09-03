@@ -6,6 +6,8 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Articles
 - Jul 2024, [Introducing AuraFlow v0.1, an Open Exploration of Large Rectified Flow Models](https://blog.fal.ai/auraflow/), Fal team use the JuiceFS in AuraFlow to support distributed training on multi-modal data
+- Jul 2024, [Sharing your Ollama models between Fly Machines using JuiceFS and Tigris](https://www.tigrisdata.com/blog/fly-tigris-juicefs/), Tigris is a new object store, low-latency, geo replicated, and no-egress fee. This is a case study about how to combine JuiceFS and Tigris as a file storage, store your Ollama data and share between multiple machines
+- [Juicedata gives data processing giants a big squeeze on price](https://blocksandfiles.com/2024/07/05/juicedata-gives-data-processing-giants-a-big-squeeze-on-price/) (Me:thanks for your report🤟)
 
 # Videos
 
