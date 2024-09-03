@@ -5,6 +5,7 @@ Hi, I am a co-founder of JuiceFS, and I often search the web for content about J
 Below content may be in different languages, you could auto translate by Chrome or Edge, or other AI tools.
 
 # Articles
+- Jul 2024, [Introducing AuraFlow v0.1, an Open Exploration of Large Rectified Flow Models](https://blog.fal.ai/auraflow/), Fal team use the JuiceFS in AuraFlow to support distributed training on multi-modal data
 
 # Videos
 
@@ -20,3 +21,5 @@ Below content may be in different languages, you could auto translate by Chrome 
 - 
 
 # Mentions in social media
+
+- Jove, co-founder of Timeplus mentioned JuiceFS on Linkedin. Timeplus is a vector database, they use the JuiceFS to [support tiered storage in Timeplus](https://www.linkedin.com/posts/jovezhong_juicefs-activity-7235418538633543681-SH4c/?utm_source=share)
