@@ -5,9 +5,24 @@ Hi, I am a co-founder of JuiceFS, and I often search the web for content about J
 Below content may be in different languages, you could auto translate by Chrome or Edge, or other AI tools.
 
 # Articles
+- Mar 2026, [Sync a Local Workspace with a Cloud Sandbox for AI Agents](https://sandbox0.ai/blog/2026-03/workspace-sync-for-ai-agents), Sandbox0 explains how `s0 sync` uses JuiceFS-backed Volumes for bidirectional workspace sync between local directories and cloud sandboxes.
 - Jul 2024, [Introducing AuraFlow v0.1, an Open Exploration of Large Rectified Flow Models](https://blog.fal.ai/auraflow/), Fal team use the JuiceFS in AuraFlow to support distributed training on multi-modal data
 - Jul 2024, [Sharing your Ollama models between Fly Machines using JuiceFS and Tigris](https://www.tigrisdata.com/blog/fly-tigris-juicefs/), Tigris is a new object store, low-latency, geo replicated, and no-egress fee. This is a case study about how to combine JuiceFS and Tigris as a file storage, store your Ollama data and share between multiple machines
 - [Juicedata gives data processing giants a big squeeze on price](https://blocksandfiles.com/2024/07/05/juicedata-gives-data-processing-giants-a-big-squeeze-on-price/) (Me:thanks for your report🤟)
+
+# Papers
+
+- Apr 2026, [Making TransactionIsolation Checking Practical](https://arxiv.org/abs/2604.20587), Jian Zhang, Shuai Mu, and Cheng Tan introduce Boomslang and use it to audit JuiceFS metadata interactions with TiKV.
+- Jan 2026, [FalconFS: Distributed File System for Large-Scale Deep Learning Pipeline](https://arxiv.org/abs/2507.10367), Jingwei Xu and co-authors compare FalconFS with JuiceFS 1.2.1, CephFS, and Lustre in metadata and deep learning pipeline experiments.
+- Oct 2025, [DFUSE: Strongly Consistent Write-Back Kernel Caching for Distributed Userspace File Systems](https://arxiv.org/abs/2503.18191), Haoyu Li and co-authors discuss JuiceFS as a FUSE-based cloud data access system while presenting the SoCC 2025 DFUSE design.
+- Sep 2025, [SkyStore: Cost-Optimized Object Storage Across Regions and Clouds](https://www.vldb.org/pvldb/vol18/p2084-liu.pdf), Shu Liu and co-authors evaluate SkyStore against JuiceFS and other baselines for multi-region and multi-cloud object storage costs.
+- Aug 2025, [DEVELOPING ARTIFICIAL INTELLIGENCE IN THE CLOUD: THE AI_INFN PLATFORM](https://journals.agh.edu.pl/csci/article/view/7071), Rosa Petrini and co-authors describe the AI_INFN platform and identify JuiceFS as the multi-site filesystem option for sharing code, environments, and datasets toward remote compute backends.
+- Jun 2025, [Efficient Unified Caching for Accelerating Heterogeneous AI Workloads](https://qzweng.github.io/assets/pdf/2025.arXiv-IGTCache-Wang.pdf), Tianze Wang and co-authors implement IGTCache atop JuiceFS and evaluate caching strategies for heterogeneous AI workloads.
+- Jun 2025, [Supporting the development of Machine Learning for fundamental science in a federated Cloud with the AI_INFN platform](https://arxiv.org/abs/2502.21266), Lucio Anderlini and co-authors describe AI_INFN's Kubernetes platform and its JuiceFS-based distributed filesystem for multi-site offloading.
+- May 2025, [A Survey of LLM $\times$ DATA](https://arxiv.org/abs/2505.18458), Xuanhe Zhou and co-authors discuss JuiceFS as an object-storage-backed distributed file system in LLM data storage infrastructure.
+- Jul 2024, [Efficient Training of Large Language Models on Distributed Infrastructures: A Survey](https://arxiv.org/abs/2407.20018), Jiangfei Duan and co-authors include JuiceFS in their survey of LLM training-data storage and caching systems.
+- Jun 2022, [NSDF-FUSE: A Testbed for Studying Object Storage via FUSE File Systems](https://par.nsf.gov/servlets/purl/10343651), Paula Olaya and co-authors include JuiceFS among the FUSE-based mapping packages evaluated for S3-compatible object storage.
+- [MILA (Multilingual Indic Language Archive): A Dataset for Equitable Multilingual LLMs](https://openreview.net/pdf/a2cae12d50405fd30f97c77264f9daffee23f138.pdf), an anonymous ICLR 2026 submission that describes a data governance pipeline where raw data enters MinIO-backed zones through JuiceFS before Spark processing and AI training.
 
 # Videos
 
@@ -29,6 +44,7 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Projects
 
+- [Sandbox0](https://github.com/sandbox0-ai/sandbox0), an open-source AI agent sandbox with persistent Volume workflows for workspace sync, durability, and multi-sandbox mounts.
 - [centminmod-juicefs](https://github.com/centminmod/centminmod-juicefs), a Centmin Mod setup guide and scripts for using JuiceFS with Cloudflare R2 object storage and a SQLite metadata engine on a LEMP stack.
 
 # Mentions in social media
