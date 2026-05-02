@@ -14,6 +14,8 @@ Include public material that meaningfully mentions JuiceFS, especially:
 
 Do not add private content, inaccessible links, pure SEO spam, or pages that only contain an incidental keyword match with no useful JuiceFS context.
 
+Do not add content hosted on `juicefs.com`; it is official project content and should not be cataloged here.
+
 ## README Structure
 
 Keep `README.md` as the primary human-readable list. Use these top-level sections when adding matching content:
@@ -55,6 +57,7 @@ Use concise descriptions. One sentence is usually enough; two sentences are acce
 - Write entries in English.
 - Preserve the original title of linked content, including non-English titles.
 - Prefer the original source over mirrors, reposts, summaries, or scraped copies.
+- Exclude official JuiceFS project content hosted on `juicefs.com`.
 - Verify that each link is reachable before adding it.
 - Verify publication month and year when possible.
 - Explain the JuiceFS relevance directly. Do not add links where JuiceFS is only a weak or ambiguous keyword match.
@@ -80,11 +83,11 @@ For larger updates, group related additions in a single pass and keep descriptio
 Automations may periodically search the web for new public JuiceFS mentions. Useful search patterns include:
 
 - `JuiceFS`
-- `"JuiceFS" blog`
-- `"JuiceFS" Kubernetes`
-- `"JuiceFS" AI`
-- `"JuiceFS" training`
-- `"JuiceFS" benchmark`
+- `"JuiceFS" blog -site:juicefs.com`
+- `"JuiceFS" Kubernetes -site:juicefs.com`
+- `"JuiceFS" AI -site:juicefs.com`
+- `"JuiceFS" training -site:juicefs.com`
+- `"JuiceFS" benchmark -site:juicefs.com`
 - `"JuiceFS" site:youtube.com`
 - `"JuiceFS" site:x.com`
 - `"JuiceFS" site:linkedin.com`
