@@ -5,12 +5,24 @@ Hi, I am a co-founder of JuiceFS, and I often search the web for content about J
 Below content may be in different languages, you could auto translate by Chrome or Edge, or other AI tools.
 
 # Articles
+- Jul 2026, [We moved JuiceFS metadata from Postgres to Redis and file ops got 7x faster](https://plori.ai/blog/juicefs-metadata-postgres-to-redis), the plori team documents a production JuiceFS metadata-engine migration for AI-agent persistent disks and compares Postgres and Redis operation latency.
+- Jul 2026, [Turn And Face The Strange](https://fly.io/blog/kurt-scott-money-sprites/), Fly.io describes its updated Sprites storage work and notes that the original Sprites storage stack was derived from JuiceFS.
+- Jun 2026, [IT Press Tour: Amazon just made S3 a file system, but JuiceFS has been doing it for nine years](https://itwire.com/business-it-news/storage/it-press-tour-amazon-just-made-s3-a-file-system-but-juicefs-has-been-doing-it-for-nine-years), Alex Zaharov-Reutt at iTWire compares Amazon S3 Files with JuiceFS and summarizes JuiceFS' object-storage-backed POSIX approach from IT Press Tour 68.
+- Jun 2026, [Stockage pour l'IA : JuiceFS conjugue les modes fichiers et objet](https://www.lemagit.fr/actualites/366644654/Stockage-pour-lIA-JuiceFS-conjugue-les-modes-fichiers-et-objet), Yann Serra at LeMagIT reports on JuiceFS as an object-storage-backed distributed file system for AI workloads and contrasts it with S3 Files.
+- Jun 2026, [How to Self-Host a Code Execution Sandbox for AI Agents (2026)](https://www.beam.cloud/blog/how-to-self-host-code-sandbox), Hassaan Qadir at Beam describes self-hosted AI-agent sandbox options and identifies Beam's S3-compatible storage layer as JuiceFS-backed.
+- Jun 2026, [IT Press Tour 68: JuiceFS](https://www.storagenewsletter.com/2026/06/16/it-press-tour-68-juicefs/), Philippe Nicolas at StorageNewsletter covers JuiceFS' object-storage-backed architecture, S3 Files comparison, tiering, mirroring, and named AI storage deployments from IT Press Tour 68.
+- Jun 2026, [JuiceFS and the Case for a Real File System on Object Storage: Inside Juicedata's Pitch for AI Workloads](https://vmblog.com/bylines/juicefs-and-the-case-for-a-real-file-system-on-object-storage-inside-juicedatas-pitch-for-ai-workloads/), David Marshall at VMblog summarizes Joe Zhou's IT Press Tour 68 presentation on JuiceFS architecture, object storage trade-offs, S3 Files, mirroring, and customer use cases.
+- Jun 2026, [JuiceFS Positions Distributed File System as Unified Storage Layer](https://security-storage-und-channel-germany.de/language/en/juicefs-positions-distributed-file-system-as-unified-storage-layer/), Jakob Jung reports on JuiceFS as an object-storage-native POSIX layer for AI training, big data, Kubernetes persistent volumes, tiered storage, and multi-cloud deployments.
+- Jun 2026, [JuiceFS and the Quiet Battle for the Future of Data Infrastructure](https://techtalksnetwork.com/blog/juicefs-and-the-quiet-battle-for-the-future-of-data-infrastructure), Neil C. Hughes at Tech Talks Network discusses JuiceFS' role in making object storage usable for AI and data infrastructure after IT Press Tour 68.
 - Mar 2026, [Sync a Local Workspace with a Cloud Sandbox for AI Agents](https://sandbox0.ai/blog/2026-03/workspace-sync-for-ai-agents), Sandbox0 explains how `s0 sync` uses JuiceFS-backed Volumes for bidirectional workspace sync between local directories and cloud sandboxes.
 - Mar 2026, [We tried Modal, Cloudflare Containers, and Sprites before building our own persistent container service](https://camelai.com/blog/we-tried-every-container-service-then-built-our-own), camelAI describes testing JuiceFS with Cloudflare Containers and R2 while evaluating persistent container storage for AI agents.
 - Mar 2026, [〖存储100问〗数据平台演进：JuiceFS 定位与选型](https://cloud.tencent.com/developer/article/2635726), 数据存储前沿技术 analyzes JuiceFS technical evolution and positioning against Hammerspace, Alluxio, Weka, and VAST Data.
 - Mar 2026, [How to Set Up JuiceFS on Ubuntu](https://oneuptime.com/blog/post/2026-03-02-how-to-set-up-juicefs-on-ubuntu/view), Nawaz Dhandala at OneUptime provides a deployment guide covering metadata engines, object storage backends, mounting, and tuning.
+- Feb 2026, [Build deep learning model training apps using CNCF Fluid with Amazon EKS](https://aws.amazon.com/blogs/containers/build-deep-learning-model-training-apps-using-cncf-fluid-with-amazon-eks/), AWS Containers Blog shows how to use JuiceFS as the Fluid storage medium with S3 and ElastiCache for Redis for distributed deep learning workloads on EKS.
 - Feb 2026, [Building a self-hosted cloud coding agent](https://stanislas.blog/2026/02/netclode-self-hosted-cloud-coding-agent/), Stanislas uses JuiceFS CSI with Redis and DigitalOcean Spaces as Netclode's persistent volume layer for stateful coding agent sessions.
+- Feb 2026, [A thousand ways to sandbox an agent](https://michaellivs.com/blog/sandbox-comparison-2026/), Michael Livshits compares agent sandboxing approaches and cites Fly Sprites' object-storage-backed persistent filesystem as using a JuiceFS-inspired architecture.
 - Jan 2026, [The Design & Implementation of Sprites](https://fly.io/blog/design-and-implementation/), Thomas Ptacek describes Fly.io Sprites' object-storage-backed filesystem as using a heavily modified JuiceFS model with SQLite metadata.
+- Jan 2026, [S3 Object Storage Mounting on Ubuntu 24.04 VPS: Complete Performance Guide with s3fs, rclone, goofys, and JuiceFS](https://onidel.com/blog/s3-object-storage-ubuntu-vps), Onidel compares JuiceFS with s3fs, rclone, and goofys for mounting S3-compatible object storage on Ubuntu.
 - Mar 2025, [JuiceFS安装之通过CSI Driver接入kubernetes](https://blog.csdn.net/sinat_15906013/article/details/146274102), 杜莱恩特Durant documents a Kubernetes CSI setup with storage selection notes, MinIO-backed JuiceFS configuration, StorageClass usage, backup and recovery, warmup, and metadata benchmarking.
 - Dec 2024, [Beyond the FUSE Debate: Why Native ZFS on Object Storage Changes Everything](https://www.zettalane.com/blog/beyond-fuse-zfs-object-storage.html), Supramani Sammandam compares JuiceFS, MinIO, and ZettaLane's ZFS-based approach in the POSIX-on-object-storage debate.
 - Jul 2024, [Introducing AuraFlow v0.1, an Open Exploration of Large Rectified Flow Models](https://blog.fal.ai/auraflow/), Fal team use the JuiceFS in AuraFlow to support distributed training on multi-modal data
@@ -25,7 +37,10 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Papers
 
+- Jun 2026, [RedKnot: Efficient Long-Context LLM Serving with Head-Aware KV Reuse and SegPagedAttention](https://arxiv.org/abs/2606.06256), Yang Liu and co-authors describe an LLM serving system whose experiments serve model weights and LongBench datasets from a 64 PB JuiceFS network mount.
 - Apr 2026, [Making TransactionIsolation Checking Practical](https://arxiv.org/abs/2604.20587), Jian Zhang, Shuai Mu, and Cheng Tan introduce Boomslang and use it to audit JuiceFS metadata interactions with TiKV.
+- Apr 2026, [DPC: A Distributed Page Cache over CXL](https://arxiv.org/abs/2604.19494), Shai Bergman and co-authors evaluate DPC against JuiceFS 1.3 as a distributed POSIX file-system baseline with local memory write-back cache enabled.
+- Feb 2026, [Step 3.5 Flash: Open Frontier-Level Intelligence with 11B Active Parameters](https://arxiv.org/abs/2602.10604), Ailin Huang and co-authors describe Step 3.5 Flash data infrastructure using object storage, HDFS, and JuiceFS for raw corpora and intermediate artifacts.
 - Jan 2026, [FalconFS: Distributed File System for Large-Scale Deep Learning Pipeline](https://arxiv.org/abs/2507.10367), Jingwei Xu and co-authors compare FalconFS with JuiceFS 1.2.1, CephFS, and Lustre in metadata and deep learning pipeline experiments.
 - Oct 2025, [DFUSE: Strongly Consistent Write-Back Kernel Caching for Distributed Userspace File Systems](https://arxiv.org/abs/2503.18191), Haoyu Li and co-authors discuss JuiceFS as a FUSE-based cloud data access system while presenting the SoCC 2025 DFUSE design.
 - Sep 2025, [SkyStore: Cost-Optimized Object Storage Across Regions and Clouds](https://www.vldb.org/pvldb/vol18/p2084-liu.pdf), Shu Liu and co-authors evaluate SkyStore against JuiceFS and other baselines for multi-region and multi-cloud object storage costs.
@@ -39,6 +54,8 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Videos
 
+- [Amazon just made S3 a file system, but JuiceFS has been doing it for nine years](https://www.youtube.com/watch?v=ktJCQ7wULy4) from [iTWire TV](https://www.youtube.com/@iTWireTV), published at June 2026. The video covers JuiceFS as a POSIX file system on object storage in the context of Amazon S3 Files.
+- [I Turned Cheap Cloud Storage Into a 1PB Local Drive (With JuiceFS)](https://www.youtube.com/watch?v=ZoBEQWxosGg) from [Better Stack](https://www.youtube.com/@betterstack), published at June 2026. The tutorial shows using JuiceFS to mount object storage as a scalable local drive and monitor it with Better Stack.
 - [JuiceFS CSI in Multi-Thousand Node Kubernetes Clusters for LLM Pre-Training](https://www.youtube.com/watch?v=DmzZHjl-vck) from [CNCF](https://www.youtube.com/@cncf), published at September 2024. Weiwei Zhu presents JuiceFS CSI Driver architecture and large-scale Kubernetes storage practices for LLM pre-training.
 - [An introduction](https://www.youtube.com/watch?v=rlDtpGi0-nE) from [Pranali P. Lokhande](https://www.youtube.com/@pranalilokhande1036), published at August 2024
 - [Open-Source Spotlight - JuiceFS](https://www.youtube.com/watch?v=6DfY_nm75CU) from [DataTalksClub](https://www.youtube.com/@DataTalksClub), published at July 2024
@@ -57,8 +74,15 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Projects
 
+- [sample-aws-self-hosted-sandbox](https://github.com/aws-samples/sample-aws-self-hosted-sandbox), an AWS sample for a self-hosted AI-agent sandbox platform that includes measured npm install timing on JuiceFS versus local ext4.
+- [JVS](https://github.com/agentsmith-project/jvs), a pre-GA Go tool for workspace control data and cloning workflows that uses a strict JuiceFS clone path for internal direct AFSCP contracts.
 - [Sandbox0](https://github.com/sandbox0-ai/sandbox0), an open-source AI agent sandbox with persistent Volume workflows for workspace sync, durability, and multi-sandbox mounts.
 - [centminmod-juicefs](https://github.com/centminmod/centminmod-juicefs), a Centmin Mod setup guide and scripts for using JuiceFS with Cloudflare R2 object storage and a SQLite metadata engine on a LEMP stack.
+
+# Reports and Benchmarks
+
+- May 2026, [MooseFS vs JuiceFS vs CephFS: picking a self-hosted POSIX distributed filesystem in 2026](https://www.bigiron.cc/guides/moosefs-vs-juicefs-vs-cephfs-self-hosted-distributed-fs), Big Iron compares JuiceFS with MooseFS and CephFS across architecture, operations, snapshots, consistency, and Kubernetes usage.
+- Aug 2025, [ZeroFS vs JuiceFS Benchmarks](https://www.zerofs.net/docs/zerofs-vs-juicefs), ZeroFS publishes benchmark results comparing ZeroFS and JuiceFS on Azure D48lds v6 with a Cloudflare R2 backend.
 
 # Mentions in social media
 
