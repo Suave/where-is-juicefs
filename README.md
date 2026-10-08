@@ -5,9 +5,13 @@ Hi, I am a co-founder of JuiceFS, and I often search the web for content about J
 Below content may be in different languages, you could auto translate by Chrome or Edge, or other AI tools.
 
 # Articles
+- Sep 2026, [Lustre, Managed NFS or JuiceFS: Choose by the Workload, Not by Datasheet](https://marcosantucci.eu/lustre-managed-nfs-or-juicefs-choose-by-the-workload-not-by-datasheet/), Marco Santucci compares JuiceFS with Lustre and managed NFS across workload shape, metadata intensity, caching, client concurrency, and operating model.
+- Sep 2026, [Modern Filesystems: Journaling vs Copy-on-Write, the Kernel Write Path, and Data Correctness](https://www.hairizuan.com/modern-filesystems-journaling-vs-copy-on-write-the-kernel-write-path-and-data-correctness/), Hairizuan Noorazman includes JuiceFS in a discussion of cloud-native and distributed filesystems with decoupled metadata and object-backed data.
+- Sep 2026, [Sharing the Sandboxes JuiceFS CSI driver across multiple LangSmith Helm releases](https://support.langchain.com/articles/7125970666-sharing-the-sandboxes-juicefs-csi-driver-across-multiple-langsmith-helm-releases), LangChain Support documents how self-hosted LangSmith installations can share a JuiceFS CSI driver across multiple Sandboxes-enabled Helm releases.
 - Jul 2026, [Why we put a server between our AI agents and JuiceFS](https://plori.ai/blog/juicefs-multi-tenant-isolation), Plori Engineering explains its production JuiceFS CE trust-model boundary for untrusted AI-agent sandboxes and the POSIX-facing server it built in front of JuiceFS.
 - Jul 2026, [We let 443 dead FUSE mounts pile up and it wedged kubelet](https://plori.ai/blog/dead-fuse-mounts-kubelet-postmortem), Plori Engineering documents a Kubernetes incident involving leaked FUSE mounts from its JuiceFS-backed agent storage plane and the cleanup automation it added.
 - Jul 2026, [We moved JuiceFS metadata from Postgres to Redis and file ops got 7x faster](https://plori.ai/blog/juicefs-metadata-postgres-to-redis), the plori team documents a production JuiceFS metadata-engine migration for AI-agent persistent disks and compares Postgres and Redis operation latency.
+- Jul 2026, [Decoupling POSIX from Object Storage: The JuiceFS Architecture](https://memonsystems.com/journal/juicefs-decoupling-posix-metadata-from-object-storage/), Memon Systems explains JuiceFS' split between POSIX-facing clients, metadata engines, local cache, and object storage for cloud-scale file access.
 - Jul 2026, [Turn And Face The Strange](https://fly.io/blog/kurt-scott-money-sprites/), Fly.io describes its updated Sprites storage work and notes that the original Sprites storage stack was derived from JuiceFS.
 - Jul 2026, [Petabyte-scale storage for AI agent sandboxes](https://celesto.ai/blog/posts/platform/petabyte-scale-storage/), Aniket Maurya at Celesto describes CelestoFS as a JuiceFS-backed durable workspace filesystem for AI-agent sandboxes and shares small-file benchmark results.
 - Jun 2026, [IT Press Tour: Amazon just made S3 a file system, but JuiceFS has been doing it for nine years](https://itwire.com/business-it-news/storage/it-press-tour-amazon-just-made-s3-a-file-system-but-juicefs-has-been-doing-it-for-nine-years), Alex Zaharov-Reutt at iTWire compares Amazon S3 Files with JuiceFS and summarizes JuiceFS' object-storage-backed POSIX approach from IT Press Tour 68.
@@ -80,6 +84,8 @@ Below content may be in different languages, you could auto translate by Chrome 
 
 # Projects
 
+- [CubeSandbox](https://github.com/TencentCloud/CubeSandbox), an open-source AI-agent sandbox platform whose JuiceFS volume plugin mounts JuiceFS subdirectories into sandboxes for shared POSIX storage over object storage.
+- [JuiceMount](https://github.com/lelanddutcher/juicemount), an Apache-2.0 macOS mount layer for creative storage workflows that uses the stock JuiceFS client and object-backed JuiceFS volumes underneath.
 - [Netclode](https://github.com/angristan/netclode), a self-hosted cloud coding agent that uses JuiceFS on S3 for persistent session storage across paused and resumed microVM sandboxes.
 - [sample-aws-self-hosted-sandbox](https://github.com/aws-samples/sample-aws-self-hosted-sandbox), an AWS sample for a self-hosted AI-agent sandbox platform that includes measured npm install timing on JuiceFS versus local ext4.
 - [JVS](https://github.com/agentsmith-project/jvs), a pre-GA Go tool for workspace control data and cloning workflows that uses a strict JuiceFS clone path for internal direct AFSCP contracts.
